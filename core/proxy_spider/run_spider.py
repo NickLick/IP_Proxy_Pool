@@ -10,7 +10,7 @@ from settings import PROXIES_SPIDERS, RUN_SPIDERS_INTERVAL
 from core.proxy_validate.httpbin_validator import check_proxy
 from core.db.mongo_pool import MongoPool
 from utils.log import logger
-import schedule
+# import schedule
 import time
 
 
@@ -57,7 +57,8 @@ class RunSpider(object):
     def run(self):
         # all_spiders = self.get_spider_from_setting
         # print(all_spiders)
-        all_spiders = [SixsixSpider(), YqieSpider(), Ip3366Spider()]
+        all_spiders = [SixsixSpider(), YqieSpider(), Ip3366Spider(), KuaiSpider(), ProxylistplusSpider(), QiyunSpider(),
+                       EightnineSpider()]
         for one_spider in all_spiders:
             # 使用异步来执行每一个爬虫任务，提高抓取代理ip效率
             self.croutine_pool.apply_async(self.__execute_spider_task, args=(one_spider,))
@@ -70,13 +71,12 @@ class RunSpider(object):
         # 创建类对象 ，执行第一次run
         # 使用schedule模块，每间隔一段时间，执行run
         rs = RunSpider()
-        rs.run()
-        schedule.every(RUN_SPIDERS_INTERVAL).hours.do(rs.run())
+        # rs.run()
+        # schedule.every(RUN_SPIDERS_INTERVAL).hours.do(rs.run())
         while True:
-            schedule.run_pending()
-            time.sleep(10)
+            rs.run()
+            time.sleep(RUN_SPIDERS_INTERVAL*3600)
 
 
 if __name__ == '__main__':
     RunSpider.start()
-

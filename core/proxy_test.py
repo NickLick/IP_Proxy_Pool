@@ -9,7 +9,7 @@ from queue import Queue
 from core.db.mongo_pool import MongoPool
 from core.proxy_validate.httpbin_validator import check_proxy
 from settings import MAX_SCORE, TEST_PROXIES_INTERVAL, TEST_PROXIES_ASYNC_COUNT
-import schedule
+# import schedule
 import time
 
 
@@ -66,14 +66,14 @@ class ProxyTest(object):
         # 类方法
         # 创建类对象 ，执行第一次run
         # 使用schedule模块，每间隔一段时间，执行run
-        pt = cls()
-        pt.run()
-        schedule.every(TEST_PROXIES_INTERVAL).minutes.do(pt.run())
+        pt = ProxyTest()
+        # pt.run()
+        # schedule.every(TEST_PROXIES_INTERVAL).minutes.do(pt.run())
         while True:
-            schedule.run_pending()
-            time.sleep(10)
+            # schedule.run_pending()
+            pt.run()
+            time.sleep(TEST_PROXIES_INTERVAL)
 
 
 if __name__ == '__main__':
     ProxyTest.start()
-

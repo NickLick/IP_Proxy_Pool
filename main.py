@@ -7,15 +7,10 @@ from core.proxy_api import ProxyApi
 
 def run():
     # 存储要启动的进程列表
-    process_list = []
-    process_list.append(Process(target=RunSpider.run))
-    process_list.append(Process(target=ProxyTest.run))
-    process_list.append(Process(target=ProxyApi.start))
-
+    process_list = [Process(target=RunSpider.start), Process(target=ProxyTest.start), Process(target=ProxyApi.start)]
     for process in process_list:
-        process.daemon=True
+        process.daemon = True
         process.start()
-
     for process in process_list:
         process.join()
 

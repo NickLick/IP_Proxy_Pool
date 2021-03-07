@@ -28,8 +28,10 @@ PROXIES_SPIDERS = [
     'core.proxy_spider.spider_proxy.KuaiSpider'
 ]
 
-RUN_SPIDERS_INTERVAL = 10
-
+# 运行爬虫每间隔小时执行一次
+RUN_SPIDERS_INTERVAL = 1
+# 检测代理ip的时间间隔,单位分钟
+TEST_PROXIES_INTERVAL = 1
 # 检测代理ip的异步数量
 TEST_PROXIES_ASYNC_COUNT = 10
 # 配置获取代理IP的最大数量，值越小，可用性就高，随机性就差

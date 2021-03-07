@@ -8,8 +8,9 @@ from gevent.pool import Pool
 from queue import Queue
 from core.db.mongo_pool import MongoPool
 from core.proxy_validate.httpbin_validator import check_proxy
-from settings import MAX_SCORE
-from settings import TEST_PROXIES_ASYNC_COUNT
+from settings import MAX_SCORE, TEST_PROXIES_INTERVAL, TEST_PROXIES_ASYNC_COUNT
+import schedule
+import time
 
 
 class ProxyTest(object):
@@ -60,7 +61,19 @@ class ProxyTest(object):
         # 调度队列的task_done，判断队列完成
         self.queue.task_done()
 
+    @classmethod
+    def start(cls):
+        # 类方法
+        # 创建类对象 ，执行第一次run
+        # 使用schedule模块，每间隔一段时间，执行run
+        pt = cls()
+        pt.run()
+        schedule.every(TEST_PROXIES_INTERVAL).minutes.do(pt.run())
+        while True:
+            schedule.run_pending()
+            time.sleep(10)
+
 
 if __name__ == '__main__':
-    proxy_test = ProxyTest()
-    proxy_test.run()
+    ProxyTest.start()
+

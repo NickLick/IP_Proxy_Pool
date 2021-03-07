@@ -1,213 +1,128 @@
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 81.95.226.138:3128
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 85.198.142.186:8081
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.216.147.61:8080
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 46.238.230.4:8080
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.138.40.205:8080
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 102.68.129.30:8080
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
-2021-26-02/28/21 17:26:06 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.150.239.25:8080
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 81.95.226.138:3128
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 85.198.142.186:8081
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.216.147.61:8080
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 46.238.230.4:8080
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.138.40.205:8080
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 102.68.129.30:8080
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.150.239.25:8080
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:452] DEBUG: http://106.104.148.208:80 "GET http://httpbin.org/get HTTP/1.1" 200 460
-2021-26-02/28/21 17:26:27 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 81.95.226.138:3128
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 85.198.142.186:8081
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.216.147.61:8080
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 46.238.230.4:8080
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.138.40.205:8080
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 102.68.129.30:8080
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
-2021-03-02/28/21 18:03:58 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.150.239.25:8080
-2021-05-02/28/21 18:05:14 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-06-02/28/21 18:06:53 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-09-02/28/21 18:09:21 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-09-02/28/21 18:09:26 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.148.52.1', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002004744FDC0>, 'Connection to 103.148.52.1 timed out. (connect timeout=5)'))
-2021-09-02/28/21 18:09:26 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-09-02/28/21 18:09:31 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020047483D00>, 'Connection to 103.148.52.1 timed out. (connect timeout=5)'))
-2021-10-02/28/21 18:10:27 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-10-02/28/21 18:10:32 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.148.52.1', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F87BDE20>, 'Connection to 103.148.52.1 timed out. (connect timeout=5)'))
-2021-10-02/28/21 18:10:32 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-10-02/28/21 18:10:37 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000258F87F3D60>, 'Connection to 103.148.52.1 timed out. (connect timeout=5)'))
-2021-10-02/28/21 18:10:37 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 81.95.226.138:3128
-2021-10-02/28/21 18:10:41 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='81.95.226.138', port=3128): Max retries exceeded with url: http://httpbin.org/get (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000258F7C85220>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。')))
-2021-10-02/28/21 18:10:41 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-10-02/28/21 18:10:45 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000258F8819550>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。')))
-2021-10-02/28/21 18:10:45 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 85.198.142.186:8081
-2021-10-02/28/21 18:10:50 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='85.198.142.186', port=8081): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F76F70A0>, 'Connection to 85.198.142.186 timed out. (connect timeout=5)'))
-2021-10-02/28/21 18:10:50 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-10-02/28/21 18:10:55 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000258F87BDF40>, 'Connection to 85.198.142.186 timed out. (connect timeout=5)'))
-2021-10-02/28/21 18:10:55 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.216.147.61:8080
-2021-11-02/28/21 18:11:00 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.216.147.61', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F7755A30>, 'Connection to 103.216.147.61 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:00 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-11-02/28/21 18:11:05 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000258F7755BB0>, 'Connection to 103.216.147.61 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:05 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 46.238.230.4:8080
-2021-11-02/28/21 18:11:10 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='46.238.230.4', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F7755B50>, 'Connection to 46.238.230.4 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:10 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-11-02/28/21 18:11:15 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000258F88193A0>, 'Connection to 46.238.230.4 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:15 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
-2021-11-02/28/21 18:11:18 connectionpool.py [lines:452] DEBUG: http://122.55.250.90:8080 "GET http://httpbin.org/get HTTP/1.1" 200 517
-2021-11-02/28/21 18:11:19 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-11-02/28/21 18:11:24 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000258F76F70A0>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:24 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.138.40.205:8080
-2021-11-02/28/21 18:11:29 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.138.40.205', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F7729C70>, 'Connection to 103.138.40.205 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:29 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-11-02/28/21 18:11:37 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
-2021-11-02/28/21 18:11:37 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 102.68.129.30:8080
-2021-11-02/28/21 18:11:42 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='102.68.129.30', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F87BDBE0>, 'Connection to 102.68.129.30 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:42 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-11-02/28/21 18:11:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
-2021-11-02/28/21 18:11:50 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
-2021-11-02/28/21 18:11:55 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='106.104.148.208', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F7BB4D90>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
-2021-11-02/28/21 18:11:55 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-12-02/28/21 18:12:00 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000258F87BDD60>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
-2021-12-02/28/21 18:12:00 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.150.239.25:8080
-2021-12-02/28/21 18:12:05 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.150.239.25', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000258F87BDE20>, 'Connection to 103.150.239.25 timed out. (connect timeout=5)'))
-2021-12-02/28/21 18:12:05 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-12-02/28/21 18:12:12 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.148.52.1:80
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 81.95.226.138:3128
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 85.198.142.186:8081
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.216.147.61:8080
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 46.238.230.4:8080
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.138.40.205:8080
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 102.68.129.30:8080
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
-2021-14-02/28/21 18:14:40 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.150.239.25:8080
-2021-14-02/28/21 18:14:43 connectionpool.py [lines:452] DEBUG: http://81.95.226.138:3128 "GET http://httpbin.org/get HTTP/1.1" 200 506
-2021-14-02/28/21 18:14:44 connectionpool.py [lines:452] DEBUG: http://103.138.40.205:8080 "GET http://httpbin.org/get HTTP/1.1" 200 492
-2021-14-02/28/21 18:14:44 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:44 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.148.52.1', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFF30DD60>, 'Connection to 103.148.52.1 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='85.198.142.186', port=8081): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFE29C760>, 'Connection to 85.198.142.186 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.216.147.61', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFF3721F0>, 'Connection to 103.216.147.61 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='46.238.230.4', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFF372BB0>, 'Connection to 46.238.230.4 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='122.55.250.90', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFF390820>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='102.68.129.30', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFF3A9CD0>, 'Connection to 102.68.129.30 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='106.104.148.208', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFF3B3670>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.150.239.25', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027AFF3B33D0>, 'Connection to 103.150.239.25 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:45 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
-2021-14-02/28/21 18:14:48 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000027AFF3A9340>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。')))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027AFF3D6130>, 'Connection to 103.148.52.1 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027AFF3D6160>, 'Connection to 85.198.142.186 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027AFF3EE220>, 'Connection to 103.216.147.61 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027AFF3F7040>, 'Connection to 46.238.230.4 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027AFF3F7070>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027AFF3F71F0>, 'Connection to 102.68.129.30 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027AFF3F7370>, 'Connection to 103.150.239.25 timed out. (connect timeout=5)'))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
-2021-14-02/28/21 18:14:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
-2021-28-02/28/21 18:28:23 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:10001/ (Press CTRL+C to quit)
-2021-28-02/28/21 18:28:40 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 18:28:40] "[33mGET / HTTP/1.1[0m" 404 -
-2021-28-02/28/21 18:28:41 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 18:28:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2021-48-02/28/21 18:48:47 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:10001/ (Press CTRL+C to quit)
-2021-48-02/28/21 18:48:52 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 18:48:52] "[33mGET / HTTP/1.1[0m" 404 -
-2021-50-02/28/21 18:50:18 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 18:50:18] "[37mGET /random HTTP/1.1[0m" 200 -
-2021-51-02/28/21 18:51:19 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 18:51:19] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:01 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
-2021-20-02/28/21 19:20:04 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:04] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:04 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2021-20-02/28/21 19:20:05 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:05] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:16 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:16] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:20 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:20] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:37 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:37] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:38 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:38] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:38 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:38] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-20-02/28/21 19:20:39 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:20:39] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-21-02/28/21 19:21:17 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:21:17] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-21-02/28/21 19:21:19 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:21:19] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-21-02/28/21 19:21:23 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:21:23] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-21-02/28/21 19:21:24 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:21:24] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-21-02/28/21 19:21:24 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:21:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2021-22-02/28/21 19:22:13 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:22:13] "[37mGET /proxies?protocol=https&domain=jd.com HTTP/1.1[0m" 200 -
-2021-22-02/28/21 19:22:18 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:22:18] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-28-02/28/21 19:28:30 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
-2021-28-02/28/21 19:28:32 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:28:32] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-28-02/28/21 19:28:34 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:28:34] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-28-02/28/21 19:28:59 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
-2021-29-02/28/21 19:29:03 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:29:03] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-30-02/28/21 19:30:08 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:30:08] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-30-02/28/21 19:30:10 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:30:10] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-30-02/28/21 19:30:11 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:30:11] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-30-02/28/21 19:30:16 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:30:16] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-31-02/28/21 19:31:15 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:31:15] "[37mGET /proxies?domain=jd.com HTTP/1.1[0m" 200 -
-2021-31-02/28/21 19:31:27 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:31:27] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-31-02/28/21 19:31:32 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:31:32] "[37mGET /proxies?protocol=https HTTP/1.1[0m" 200 -
-2021-31-02/28/21 19:31:41 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:31:41] "[37mGET /proxies HTTP/1.1[0m" 200 -
-2021-31-02/28/21 19:31:45 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:31:45] "[37mGET /proxies HTTP/1.1[0m" 200 -
-2021-36-02/28/21 19:36:21 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
-2021-37-02/28/21 19:37:21 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:37:21] "[33mGET /diasble_domain?ip=103.156.16.62&domain=jd.com HTTP/1.1[0m" 404 -
-2021-37-02/28/21 19:37:31 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:37:31] "[33mGET /diasble_domain HTTP/1.1[0m" 404 -
-2021-37-02/28/21 19:37:39 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:37:39] "[33mGET /diasable_domain HTTP/1.1[0m" 404 -
-2021-38-02/28/21 19:38:26 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:38:26] "[37mGET /disable_domain HTTP/1.1[0m" 200 -
-2021-38-02/28/21 19:38:36 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:38:36] "[37mGET /disable_domain?ip=106.104.148.208 HTTP/1.1[0m" 200 -
-2021-38-02/28/21 19:38:48 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:38:48] "[37mGET /disable_domain?ip=106.104.148.208&domain=jd.com HTTP/1.1[0m" 200 -
-2021-39-02/28/21 19:39:49 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
-2021-39-02/28/21 19:39:52 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:39:52] "[37mGET /disable_domain?ip=106.104.148.208&domain=jd.com HTTP/1.1[0m" 200 -
-2021-41-02/28/21 19:41:29 app.py [lines:1891] ERROR: Exception on /random [GET]
-Traceback (most recent call last):
-  File "C:\Users\93057\PycharmProjects\pythonProject\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\93057\PycharmProjects\pythonProject\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\93057\PycharmProjects\pythonProject\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "C:\Users\93057\PycharmProjects\pythonProject\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "C:\Users\93057\PycharmProjects\pythonProject\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\93057\PycharmProjects\pythonProject\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\93057\PycharmProjects\IP_Proxy_Pool\core\proxy_api.py", line 24, in random
-    proxy = self.mongo_pool.random_proxy(protocol, domain, count=PROXIES_MAX_COUNT)
-  File "C:\Users\93057\PycharmProjects\IP_Proxy_Pool\core\db\mongo_pool.py", line 90, in random_proxy
-    return random.choice(proxy_list)
-  File "C:\Users\93057\AppData\Local\Programs\Python\Python39\lib\random.py", line 346, in choice
-    return seq[self._randbelow(len(seq))]
-IndexError: list index out of range
-2021-41-02/28/21 19:41:29 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:41:29] "[35m[1mGET /random?protocal=http&domain=jd.com HTTP/1.1[0m" 500 -
-2021-41-02/28/21 19:41:41 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:41:41] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-42-02/28/21 19:42:13 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:42:13] "[37mGET /random?protocol=http HTTP/1.1[0m" 200 -
-2021-42-02/28/21 19:42:37 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:42:37] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-42-02/28/21 19:42:43 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:42:43] "[37mGET /random?protocol=http HTTP/1.1[0m" 200 -
-2021-42-02/28/21 19:42:44 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:42:44] "[37mGET /random?protocol=http HTTP/1.1[0m" 200 -
-2021-42-02/28/21 19:42:45 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:42:45] "[37mGET /random?protocol=http HTTP/1.1[0m" 200 -
-2021-42-02/28/21 19:42:45 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:42:45] "[37mGET /random?protocol=http HTTP/1.1[0m" 200 -
-2021-42-02/28/21 19:42:45 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:42:45] "[37mGET /random?protocol=http HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:37 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
-2021-43-02/28/21 19:43:41 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:41] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:41 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:41] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:42 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:42] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:42 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:42] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:42 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:42] "[37mGET /random?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:47 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:47] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:47 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:47] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:48 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:48] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-43-02/28/21 19:43:55 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:43:55] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-47-02/28/21 19:47:00 _internal.py [lines:113] INFO:  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
-2021-47-02/28/21 19:47:04 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:47:04] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-47-02/28/21 19:47:05 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:47:05] "[37mGET /proxies?protocol=http&domain=jd.com HTTP/1.1[0m" 200 -
-2021-47-02/28/21 19:47:12 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:47:12] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-49-02/28/21 19:49:16 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:49:16] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-49-02/28/21 19:49:17 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:49:17] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-49-02/28/21 19:49:21 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:49:21] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
-2021-49-02/28/21 19:49:24 _internal.py [lines:113] INFO: 127.0.0.1 - - [28/Feb/2021 19:49:24] "[37mGET /proxies?protocol=http HTTP/1.1[0m" 200 -
+2021-42-03/07/21 22:42:34 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.156.16.62:8080
+2021-42-03/07/21 22:42:34 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 84.214.150.146:8080
+2021-42-03/07/21 22:42:34 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
+2021-42-03/07/21 22:42:34 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.153.66.34:8080
+2021-42-03/07/21 22:42:34 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.152.5.80:8080
+2021-42-03/07/21 22:42:34 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
+2021-42-03/07/21 22:42:38 connectionpool.py [lines:452] DEBUG: http://103.152.5.80:8080 "GET http://httpbin.org/get HTTP/1.1" 200 544
+2021-42-03/07/21 22:42:38 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-42-03/07/21 22:42:39 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1123)')))
+2021-42-03/07/21 22:42:39 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='122.55.250.90', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027896FE57F0>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
+2021-42-03/07/21 22:42:39 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='106.104.148.208', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000027896FF3BB0>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-42-03/07/21 22:42:39 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-42-03/07/21 22:42:39 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-42-03/07/21 22:42:40 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.153.66.34', port=8080): Read timed out. (read timeout=5)
+2021-42-03/07/21 22:42:40 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-42-03/07/21 22:42:40 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='84.214.150.146', port=8080): Read timed out. (read timeout=5)
+2021-42-03/07/21 22:42:40 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-42-03/07/21 22:42:40 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.156.16.62', port=8080): Read timed out. (read timeout=5)
+2021-42-03/07/21 22:42:40 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-42-03/07/21 22:42:44 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027897013820>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
+2021-42-03/07/21 22:42:44 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000278970137F0>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-42-03/07/21 22:42:45 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000027896FBBC70>, 'Connection to 84.214.150.146 timed out. (connect timeout=5)'))
+2021-42-03/07/21 22:42:45 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-42-03/07/21 22:42:48 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-45-03/07/21 22:45:15 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.156.16.62:8080
+2021-45-03/07/21 22:45:15 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 84.214.150.146:8080
+2021-45-03/07/21 22:45:15 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
+2021-45-03/07/21 22:45:15 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.153.66.34:8080
+2021-45-03/07/21 22:45:15 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.152.5.80:8080
+2021-45-03/07/21 22:45:15 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
+2021-45-03/07/21 22:45:20 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.156.16.62', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001447D3C1DC0>, 'Connection to 103.156.16.62 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:20 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='84.214.150.146', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001447D3C1E50>, 'Connection to 84.214.150.146 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:20 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='122.55.250.90', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001447D4239A0>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:20 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.153.66.34', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001447D441130>, 'Connection to 103.153.66.34 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:20 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.152.5.80', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001447D42EE50>, 'Connection to 103.152.5.80 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:20 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='106.104.148.208', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001447D42ED60>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:20 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-45-03/07/21 22:45:20 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-45-03/07/21 22:45:20 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-45-03/07/21 22:45:20 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-45-03/07/21 22:45:20 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-45-03/07/21 22:45:20 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-45-03/07/21 22:45:21 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1123)')))
+2021-45-03/07/21 22:45:25 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001447D474220>, 'Connection to 84.214.150.146 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:25 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001447D474C70>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:25 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001447D474AF0>, 'Connection to 103.153.66.34 timed out. (connect timeout=5)'))
+2021-45-03/07/21 22:45:25 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-45-03/07/21 22:45:28 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-46-03/07/21 22:46:13 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.156.16.62:8080
+2021-46-03/07/21 22:46:13 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 84.214.150.146:8080
+2021-46-03/07/21 22:46:13 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
+2021-46-03/07/21 22:46:13 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.153.66.34:8080
+2021-46-03/07/21 22:46:13 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.152.5.80:8080
+2021-46-03/07/21 22:46:13 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
+2021-46-03/07/21 22:46:15 connectionpool.py [lines:452] DEBUG: http://103.153.66.34:8080 "GET http://httpbin.org/get HTTP/1.1" 200 552
+2021-46-03/07/21 22:46:15 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-46-03/07/21 22:46:17 connectionpool.py [lines:452] DEBUG: http://103.152.5.80:8080 "GET http://httpbin.org/get HTTP/1.1" 200 652
+2021-46-03/07/21 22:46:17 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-46-03/07/21 22:46:18 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.156.16.62', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000023FD3B3A7F0>, 'Connection to 103.156.16.62 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:18 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='84.214.150.146', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000023FD3B3AF70>, 'Connection to 84.214.150.146 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:18 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='122.55.250.90', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000023FD3B9ED90>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:18 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='106.104.148.208', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000023FD3BB8DC0>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:18 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-46-03/07/21 22:46:18 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-46-03/07/21 22:46:18 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-46-03/07/21 22:46:18 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-46-03/07/21 22:46:19 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1123)')))
+2021-46-03/07/21 22:46:20 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000023FD3B3A9A0>, 'Connection to 103.153.66.34 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:23 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000023FD3BADA30>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:23 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000023FD3BADF40>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:23 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000023FD3BADE50>, 'Connection to 103.156.16.62 timed out. (connect timeout=5)'))
+2021-46-03/07/21 22:46:25 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-47-03/07/21 22:47:35 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.156.16.62:8080
+2021-47-03/07/21 22:47:35 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 84.214.150.146:8080
+2021-47-03/07/21 22:47:35 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
+2021-47-03/07/21 22:47:35 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.153.66.34:8080
+2021-47-03/07/21 22:47:35 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.152.5.80:8080
+2021-47-03/07/21 22:47:35 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
+2021-47-03/07/21 22:47:36 connectionpool.py [lines:452] DEBUG: http://103.152.5.80:8080 "GET http://httpbin.org/get HTTP/1.1" 200 525
+2021-47-03/07/21 22:47:36 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-47-03/07/21 22:47:37 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1123)')))
+2021-47-03/07/21 22:47:40 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.156.16.62', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001FE4FDBBF40>, 'Connection to 103.156.16.62 timed out. (connect timeout=5)'))
+2021-47-03/07/21 22:47:40 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='84.214.150.146', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001FE4FDBBF70>, 'Connection to 84.214.150.146 timed out. (connect timeout=5)'))
+2021-47-03/07/21 22:47:40 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-47-03/07/21 22:47:40 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-47-03/07/21 22:47:42 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='122.55.250.90', port=8080): Read timed out. (read timeout=5)
+2021-47-03/07/21 22:47:42 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-47-03/07/21 22:47:42 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='106.104.148.208', port=80): Read timed out. (read timeout=5)
+2021-47-03/07/21 22:47:42 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-47-03/07/21 22:47:44 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.153.66.34', port=8080): Read timed out. (read timeout=5)
+2021-47-03/07/21 22:47:44 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-47-03/07/21 22:47:45 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001FE4FE4CA60>, 'Connection to 103.156.16.62 timed out. (connect timeout=5)'))
+2021-47-03/07/21 22:47:46 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-47-03/07/21 22:47:47 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001FE4FE4C9D0>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
+2021-47-03/07/21 22:47:47 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001FE4FE2DDF0>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-47-03/07/21 22:47:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.156.16.62:8080
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 84.214.150.146:8080
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 122.55.250.90:8080
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.153.66.34:8080
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.152.5.80:8080
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 106.104.148.208:80
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.132.221.178:8080
+2021-53-03/07/21 22:53:33 connectionpool.py [lines:227] DEBUG: Starting new HTTP connection (1): 103.154.160.58:8080
+2021-53-03/07/21 22:53:34 connectionpool.py [lines:452] DEBUG: http://103.152.5.80:8080 "GET http://httpbin.org/get HTTP/1.1" 200 559
+2021-53-03/07/21 22:53:34 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:35 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1123)')))
+2021-53-03/07/21 22:53:38 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='84.214.150.146', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000015A58E82F70>, 'Connection to 84.214.150.146 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:38 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.153.66.34', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000015A58EF24C0>, 'Connection to 103.153.66.34 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:38 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='106.104.148.208', port=80): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000015A58F15760>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:38 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.132.221.178', port=8080): Max retries exceeded with url: http://httpbin.org/get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000015A58F1F0D0>, 'Connection to 103.132.221.178 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:38 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:38 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:38 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:38 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:39 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='122.55.250.90', port=8080): Read timed out. (read timeout=5)
+2021-53-03/07/21 22:53:39 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:42 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.154.160.58', port=8080): Read timed out. (read timeout=5)
+2021-53-03/07/21 22:53:42 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:42 httpbin_validator.py [lines:80] DEBUG: HTTPConnectionPool(host='103.156.16.62', port=8080): Read timed out. (read timeout=5)
+2021-53-03/07/21 22:53:42 connectionpool.py [lines:971] DEBUG: Starting new HTTPS connection (1): httpbin.org:443
+2021-53-03/07/21 22:53:43 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015A58EF2190>, 'Connection to 84.214.150.146 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:43 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015A58F3B670>, 'Connection to 103.153.66.34 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:43 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015A58F3B730>, 'Connection to 106.104.148.208 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:43 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015A58F3B7F0>, 'Connection to 103.132.221.178 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:44 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015A58F1FF10>, 'Connection to 122.55.250.90 timed out. (connect timeout=5)'))
+2021-53-03/07/21 22:53:47 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))
+2021-53-03/07/21 22:53:50 httpbin_validator.py [lines:80] DEBUG: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /get (Caused by ProxyError('Cannot connect to proxy.', timeout('The handshake operation timed out')))

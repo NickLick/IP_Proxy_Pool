@@ -40,12 +40,15 @@ class RunSpider(object):
         try:
             # 遍历爬虫对象列表，获取爬虫对象，遍历爬虫对象的get_proxies方法，获取代理ip
             for proxy in one_spider.get_proxies():
-                print(proxy)
+                logger.info("抓取到一个代理：%s,进行测试....." % proxy)
                 # 检验代理ip可用性
                 proxy = check_proxy(proxy)
                 # 如果可用，写入数据库
                 if proxy.speed != -1:
+                    logger.info("%s 测试成功,插入数据库." % proxy)
                     self.mongo_pool.insert_one(proxy)
+                else:
+                    logger.warning("%s 测试失败." % proxy)
         except Exception as ex:
             logger.exception(ex)
 
@@ -57,8 +60,8 @@ class RunSpider(object):
     def run(self):
         # all_spiders = self.get_spider_from_setting
         # print(all_spiders)
-        all_spiders = [SixsixSpider(), YqieSpider(), Ip3366Spider(), KuaiSpider(), ProxylistplusSpider(), QiyunSpider(),
-                       EightnineSpider()]
+        all_spiders = [SixsixSpider(), YqieSpider(), Ip3366Spider(), KuaiSpider(), XilaSpider(),
+                       JiangXianLiSpider()]  # , QiyunSpider(),EightnineSpider()]
         for one_spider in all_spiders:
             # 使用异步来执行每一个爬虫任务，提高抓取代理ip效率
             self.croutine_pool.apply_async(self.__execute_spider_task, args=(one_spider,))
@@ -74,8 +77,10 @@ class RunSpider(object):
         # rs.run()
         # schedule.every(RUN_SPIDERS_INTERVAL).hours.do(rs.run())
         while True:
+            logger.info("开始进行定时抓取代理.................")
             rs.run()
-            time.sleep(RUN_SPIDERS_INTERVAL*3600)
+            logger.info("抓取代理结束，等待%ds进行下一次抓取................." % RUN_SPIDERS_INTERVAL * 3600)
+            time.sleep(RUN_SPIDERS_INTERVAL * 3600)
 
 
 if __name__ == '__main__':

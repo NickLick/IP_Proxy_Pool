@@ -3,10 +3,7 @@ import requests
 from utils.http import get_request_headers
 from lxml import etree
 from domain import Proxy
-from settings import TEST_TIMEOUT
-
-
-# from utils.log import logger
+from settings import GET_PROXY_TIMEOUT
 
 
 class BaseSpider(object):
@@ -28,7 +25,7 @@ class BaseSpider(object):
     # 根据url发送请求，获取页面数据
     def get_page_from_url(self, url):
         # logger.info('begin get page')
-        response = requests.get(url, headers=get_request_headers(), timeout=TEST_TIMEOUT)
+        response = requests.get(url, headers=get_request_headers(), timeout=GET_PROXY_TIMEOUT)
         # logger.info('success get page')
         return response.content
         # return response.content.decode()
@@ -74,11 +71,8 @@ if __name__ == '__main__':
     # spider = BaseSpider(**config)
     # for proxy in spider.get_proxies():
     #    print(proxy)
-    # urls = ['https://www.kuaidaili.com/free/intr/{}'.format(i) for i in range(1, 6)]
-    # for url in urls:
-    header = get_request_headers()
-    print(header)
-    response = requests.get('https://sp0.baidu.com/8aQDcjqpAAV3otqbppnN2DJv/api.php?resource_id=6899&query=失信人&pn=3'
-                            '&rn=10&from_mid=1&&oe=utf-8', headers=header)
-
-    print(response.content.decode())
+    urls = ['https://www.kuaidaili.com/free/intr/{}'.format(i) for i in range(1, 6)]
+    for url in urls:
+        header = get_request_headers()
+        response = requests.get(url, headers=header)
+        print(response.content.decode())

@@ -52,7 +52,7 @@ class ProxyApi(object):
 
     # 启动flask的web服务
     def run(self):
-        self.app.run('0.0.0.0', port=8888)
+        self.app.run('127.0.0.1', port=8888)
 
     # 提供启动方法，统一入口
     @classmethod

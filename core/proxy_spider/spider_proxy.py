@@ -1,3 +1,6 @@
+from lxml import etree
+
+from domain import Proxy
 from utils.http import get_request_headers
 from core.proxy_spider.spider_base import BaseSpider
 import time
@@ -29,21 +32,6 @@ class KuaiSpider(BaseSpider):
         time.sleep(random.uniform(1, 3))
         # 调用父类的方法
         return super().get_page_from_url(url)
-
-
-# 实现proxylistplus代理的爬虫 https://list.proxylistplus.com/Fresh-HTTP-Proxy-List-1
-# 国外网站
-class ProxylistplusSpider(BaseSpider):
-    # url列表
-    urls = ['https://list.proxylistplus.com/Fresh-HTTP-Proxy-List-{}'.format(i) for i in range(1, 7)]
-    # 分组xpath，用于获取代理ip信息的标签列表
-    group_xpath = '//*[@id="page"]/table[2]/tr[position()>2]'
-    # 组内xpath,提取ip port area
-    detail_xpath = {
-        'ip': './td[2]/text()',  # //*[@id="page"]/table[2]/tbody/tr[3]/td[2]
-        'port': './td[3]/text()',  # //*[@id="page"]/table[2]/tbody/tr[3]/td[3]
-        'area': './td[5]/text()'  # //*[@id="page"]/table[2]/tbody/tr[3]/td[5]
-    }
 
 
 # 实现https://www.7yip.cn/free/代理ip的爬虫
@@ -160,17 +148,58 @@ class SixsixSpider(BaseSpider):
         # return response.content.decode()
 
 
+# 实现xila代理的爬虫 http://www.xiladaili.com/gaoni/2/
+class XilaSpider(BaseSpider):
+    # url列表
+    urls = ['http://www.xiladaili.com/gaoni/{}/'.format(i) for i in range(1, 20)]
+    # 分组xpath，用于获取代理ip信息的标签列表
+    group_xpath = '/html/body/div/div[3]/div[2]/table/tbody/tr'
+    # 组内xpath,提取ip port area
+    detail_xpath = {  # /html/body/div/div[3]/div[2]/table/tbody/tr[1]/td[1]
+        'ip_port': './td[1]/text()',  # /html/body/div/div[3]/div[2]/table/tbody/tr[4]/td[1]
+        'area': './td[4]/text()'  # /html/body/div/div[3]/div[2]/table/tbody/tr[6]/td[4]
+    }
+
+    # 重写从页面提取数据，封装为proxy对象
+    def get_proxies_from_page(self, page):
+        element = etree.HTML(page)
+        # 获取包含代理ip信息的标签列表
+        trs = element.xpath(self.group_xpath)
+        # 遍历trs，获取代理ip相关ip信息
+        for tr in trs:
+            ip_port = self.get_first_from_list(tr.xpath(self.detail_xpath['ip_port']))
+            ip = ip_port.split(":")[0]
+            port = ip_port.split(":")[1]
+            area = self.get_first_from_list(tr.xpath(self.detail_xpath['area']))
+            proxy = Proxy(ip, port, area=area)
+            yield proxy
+
+
+# 实现jiangxianli代理的爬虫 https://ip.jiangxianli.com/?page=2
+# 可以使用
+class JiangXianLiSpider(BaseSpider):
+    # url列表
+    urls = ['https://ip.jiangxianli.com/?page={}'.format(i) for i in range(1, 6)]
+    # 分组xpath，用于获取代理ip信息的标签列表
+    group_xpath = '/html/body/div[1]/div[2]/div[1]/div[1]/table/tbody/tr'  #
+    # 组内xpath,提取ip port area
+    detail_xpath = {  # /html/body/div[1]/div[2]/div[1]/div[1]/table/thead/tr/th[1]
+        'ip': './td[1]/text()',  # /html/body/div[1]/div[2]/div[1]/div[1]/table/tbody/tr[2]/td[1]
+        'port': './td[2]/text()',  # /html/body/div[1]/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[2]
+        'area': './td[5]/text()'  # /html/body/div[1]/div[2]/div[1]/div[1]/table/tbody/tr[1]/td[5]
+    }
+
+
 if __name__ == '__main__':
     # urls = ['https://www.7yip.cn/free/?action=china&page={}'.format(i) for i in range(1, 11)]
     # print(urls)
     # spider = KuaiSpider()
-    # spider = ProxylistplusSpider()
-    # spider = QiyunSpider()
-    # spider = EightnineSpider()
-
-    # https的网站不知道为什么都不能爬，暂时只能爬http
     # spider = Ip3366Spider()
     # spider = YqieSpider()
-    spider = SixsixSpider()
+    # spider = SixsixSpider()
+    # spider = QiyunSpider()
+    # spider = EightnineSpider()
+    # spider = XilaSpider()
+    spider = JiangXianLiSpider()
     for proxy in spider.get_proxies():
         print(proxy)

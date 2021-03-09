@@ -11,7 +11,7 @@ from core.proxy_validate.httpbin_validator import check_proxy
 from settings import MAX_SCORE, TEST_PROXIES_INTERVAL, TEST_PROXIES_ASYNC_COUNT
 # import schedule
 import time
-
+from utils.log import logger
 
 class ProxyTest(object):
     def __init__(self):
@@ -44,10 +44,12 @@ class ProxyTest(object):
     def __check_one_proxy(self):
         # 从队列中获取proxy，在进行检查
         proxy = self.queue.get()
+        logger.info("正在检查代理{}".format(proxy))
         proxy = check_proxy(proxy)
         # 如果不可用，代理分数减一
         if proxy.speed == -1:
             proxy.score -= 1
+            logger.info("代理{}检查不可用，分数减一".format(proxy))
             # 代理ip分数0，从数据库删除
             if proxy.score == 0:
                 self.mongo_pool.delete_one(proxy)
@@ -56,6 +58,7 @@ class ProxyTest(object):
                 self.mongo_pool.update_one(proxy)
         # 如果监测可用，恢复该代理的分数，更新到数据库
         else:
+            logger.info("代理{}检查可用，分数恢复".format(proxy))
             proxy.score = MAX_SCORE
             self.mongo_pool.update_one(proxy)
         # 调度队列的task_done，判断队列完成
@@ -71,7 +74,9 @@ class ProxyTest(object):
         # schedule.every(TEST_PROXIES_INTERVAL).minutes.do(pt.run())
         while True:
             # schedule.run_pending()
+            logger.info("开始进行定时检查代理.................")
             pt.run()
+            logger.info("检查代理结束，等待%ds进行下一次检查................." % TEST_PROXIES_INTERVAL)
             time.sleep(TEST_PROXIES_INTERVAL)
 
 

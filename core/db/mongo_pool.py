@@ -26,9 +26,8 @@ class MongoPool(object):
             dic = proxy.__dict__
             dic['_id'] = proxy.ip
             self.proxies.insert_one(dic)
-            logger.info("插入新的代理:{}".format(proxy))
         else:
-            logger.warning("已存在的代理:{}".format(proxy))
+            logger.warning("已存在的代理:{},取消插入".format(proxy))
 
     # 实现修改更新功能 修改修个代理ip
     def update_one(self, proxy):
@@ -37,7 +36,7 @@ class MongoPool(object):
     # 实现删除功能,根据代理ip删除一个代理
     def delete_one(self, proxy):
         self.proxies.delete_one({'_id': proxy.ip})
-        logger.info("删除代理:{}".format(proxy))
+        logger.info("代理:{}分数已归零，从数据库删除".format(proxy))
 
     # 实现查找功能 查询所有的代理ip的功能
     def find_all(self):

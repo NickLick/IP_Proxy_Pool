@@ -3,8 +3,8 @@
 import time
 import requests
 import json
-from utils.http import get_request_headers
-from settings import TEST_TIMEOUT
+from utils.http_header import get_request_headers
+from utils.settings import TEST_TIMEOUT
 from utils.log import logger
 from domain import Proxy
 

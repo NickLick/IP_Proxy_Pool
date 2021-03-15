@@ -2,8 +2,8 @@
 from flask import Flask
 from flask import request
 import json
-from core.db.mongo_pool import MongoPool
-from settings import PROXIES_MAX_COUNT
+from db.mongo_pool import MongoPool
+from utils.settings import PROXIES_MAX_COUNT
 
 
 class ProxyApi(object):

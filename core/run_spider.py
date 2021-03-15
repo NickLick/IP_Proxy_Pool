@@ -5,10 +5,10 @@ from gevent import monkey
 monkey.patch_all()
 from gevent.pool import Pool
 import importlib
-from core.proxy_spider.spider_proxy import *
-from settings import PROXIES_SPIDERS, RUN_SPIDERS_INTERVAL
-from core.proxy_validate.httpbin_validator import check_proxy
-from core.db.mongo_pool import MongoPool
+from proxy_spider.spider_proxy import *
+from utils.settings import PROXIES_SPIDERS, RUN_SPIDERS_INTERVAL
+from proxy_validate.httpbin_validator import check_proxy
+from db.mongo_pool import MongoPool
 from utils.log import logger
 # import schedule
 import time

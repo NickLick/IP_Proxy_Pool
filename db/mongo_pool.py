@@ -1,7 +1,7 @@
 # 用于对proxies集合进行数据库的相关操作
 # 提供基础的数据库增删改查
 from pymongo import MongoClient
-from settings import MONGO_URL
+from utils.settings import MONGO_URL
 from utils.log import logger
 from domain import Proxy
 import pymongo

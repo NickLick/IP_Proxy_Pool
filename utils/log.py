@@ -1,7 +1,6 @@
 import sys
-import logging
 
-from settings import *
+from utils.settings import *
 
 
 class Logger(object):

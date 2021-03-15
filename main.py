@@ -1,6 +1,6 @@
 # 统一的入口
 from multiprocessing import Process
-from core.proxy_spider.run_spider import RunSpider
+from core.run_spider import RunSpider
 from core.proxy_test import ProxyTest
 from core.proxy_api import ProxyApi
 

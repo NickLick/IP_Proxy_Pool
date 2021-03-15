@@ -1,4 +1,4 @@
-from settings import MAX_SCORE
+from utils.settings import MAX_SCORE
 
 
 class Proxy(object):

@@ -6,9 +6,9 @@ from gevent import monkey
 monkey.patch_all()
 from gevent.pool import Pool
 from queue import Queue
-from core.db.mongo_pool import MongoPool
-from core.proxy_validate.httpbin_validator import check_proxy
-from settings import MAX_SCORE, TEST_PROXIES_INTERVAL, TEST_PROXIES_ASYNC_COUNT
+from db.mongo_pool import MongoPool
+from proxy_validate.httpbin_validator import check_proxy
+from utils.settings import MAX_SCORE, TEST_PROXIES_INTERVAL, TEST_PROXIES_ASYNC_COUNT
 # import schedule
 import time
 from utils.log import logger

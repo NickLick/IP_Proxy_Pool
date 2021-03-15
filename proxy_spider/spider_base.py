@@ -1,9 +1,9 @@
 # 实现指定不同URL列表，分组的XPATH和详细的XPATH，从不同页面上提取代理ip，端口号和区域的通用爬虫
 import requests
-from utils.http import get_request_headers
+from utils.http_header import get_request_headers
 from lxml import etree
 from domain import Proxy
-from settings import GET_PROXY_TIMEOUT
+from utils.settings import GET_PROXY_TIMEOUT
 
 
 class BaseSpider(object):

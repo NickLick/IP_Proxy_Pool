@@ -1,8 +1,8 @@
 from lxml import etree
 
 from domain import Proxy
-from utils.http import get_request_headers
-from core.proxy_spider.spider_base import BaseSpider
+from utils.http_header import get_request_headers
+from proxy_spider.spider_base import BaseSpider
 import time
 import random
 import requests
